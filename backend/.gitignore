@@ -1,0 +1,11 @@
+__pycache__/
+*.sqlite3
+.DS_Store
+secret_settings.py
+keys.py
+debug.log
+env
+.env
+.vscode
+.vscode/.ropeproject
+.staticfiles
