@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header.js'
 import Footer from './Footer.js'
-import JoinButton from './JoinButton.js';
+import Main from './Main.js'
 
 class App extends React.Component {
   constructor() {
@@ -14,7 +14,7 @@ class App extends React.Component {
       <body>
         <Header />
         <div class="content">
-        <JoinButton />
+        <Main />
         </div>
         <Footer />
       </body>

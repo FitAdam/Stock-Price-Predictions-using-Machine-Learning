@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { NavLink, Switch, Route } from 'react-router-dom';
 
 function Header() {
+  
   return (
 
     <header className="header">
@@ -18,9 +20,9 @@ function Header() {
               SpecBot 2021
             </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">About</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav.Link ><NavLink exact activeClassName="current" to='/Home'>Home</NavLink></Nav.Link>
+          <Nav.Link ><NavLink exact activeClassName="current" to='/Articles'>Articles</NavLink></Nav.Link>
+          <Nav.Link ><NavLink exact activeClassName="current" to='/DataHub'>Stock Predictions</NavLink></Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
