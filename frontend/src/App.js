@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header.js'
+import Navbar from './components/Navbar.js';
 import Footer from './Footer.js'
 import Main from './Main.js'
 
@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <body>
-        <Header />
+        <Navbar />
         <div class="content">
         <Main />
         </div>

@@ -8,7 +8,7 @@ async function searchNews(q) {
     "method": "GET",
     "headers": {
       "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",
-      "x-rapidapi-key": "",
+      "x-rapidapi-key": "7c7f1ef157msh3d52b2091c2aea6p161201jsnfb77c1f684c1",
       "x-bingapis-sdk": "true"
     }
   });
