@@ -119,6 +119,8 @@
 
   .nav-item:hover {
     border: none;
+    color:  #e2ec20;
+
   }
 
   .nav-item {
@@ -140,11 +142,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
   }
 
  

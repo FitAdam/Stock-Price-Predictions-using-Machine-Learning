@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: '#e2ec20' }}>
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
@@ -35,7 +35,7 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/services'
+                  to='/Articles'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
@@ -44,7 +44,7 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/products'
+                  to='/StockPred'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
@@ -53,7 +53,7 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/products'
+                  to='/About'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
