@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
+from .models import Post, NewsTitles
 
 
 @admin.register(Post)
@@ -12,4 +12,5 @@ class PostAdmin(admin.ModelAdmin):
     date_hierarchy = 'publish'
     ordering = ('status', 'publish')
 
+admin.site.register(NewsTitles)
 
