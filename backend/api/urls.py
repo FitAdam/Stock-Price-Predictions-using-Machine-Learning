@@ -6,8 +6,8 @@ app_name = 'api'
 urlpatterns = [
    # url patterns
     path('post-list', ListPost.as_view(), name='post_list'),
-    path('<int:pk>/', DetailPost.as_view()),
-    path('news-titles', NewsTitlesView.as_view(), name='news_titles')
+    path('post-list/<int:pk>/', DetailPost.as_view()),
+    path('news-titles/<int:pk>/', NewsTitlesView.as_view())
     
 ]
 

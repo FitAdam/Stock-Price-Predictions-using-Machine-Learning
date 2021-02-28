@@ -27,7 +27,7 @@ class DetailPost(generics.RetrieveAPIView):
     serializer_class = PostSerializer
 
 
-class NewsTitlesView(generics.ListAPIView):
+class NewsTitlesView(generics.RetrieveAPIView):
 	queryset = NewsTitles.objects.all()
 	serializer_class = NewsTitlesSerializers
 
