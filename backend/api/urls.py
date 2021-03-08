@@ -1,13 +1,14 @@
 from django.urls import path
-from .views import ListPost, DetailPost, NewsTitlesView
+from . import views
+from .views import ListPost, DetailPost, news_titles
 
-app_name = 'api'
 
 urlpatterns = [
    # url patterns
-    path('post-list', ListPost.as_view(), name='post_list'),
-    path('post-list/<int:pk>/', DetailPost.as_view()),
-    path('news-titles/<int:pk>/', NewsTitlesView.as_view())
-    
+    path('post-list', ListPost),
+    path('post-list/<int:pk>/', DetailPost),
+    path('news-titles', views.news_titles),
+
+   
 ]
 

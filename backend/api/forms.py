@@ -1,7 +1,7 @@
-from django.forms import ModelForm
-from . models import NewsTitles
+from django import forms
 
-class NewsTitlesForm(ModelForm):
-	class Meta:
-		model=NewsTitles
-		fields = '__all__'
+class NewsTitlesForm(forms.Form):
+	first_title = forms.CharField(max_length=25)
+	second_title = forms.CharField(max_length=25)
+	third_title = forms.CharField(max_length=25)
+    
