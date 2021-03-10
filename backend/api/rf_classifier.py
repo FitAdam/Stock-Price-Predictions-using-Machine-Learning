@@ -10,13 +10,28 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import csv  
 
 
-def json_to_csv(first_title, second_title, third_title):     
+def save_json_to_csv(json_payload):     
+    
+    """This function gets a values from json and saves them into cvs file"""
+
+    first_title = json_payload['FIRST_TITLE']
+    second_title = json_payload['SECOND_TITLE']
+    third_title = json_payload['THIRD_TITLE']
+
     fields=['08/03/2021','0',first_title, second_title, third_title]
     with open(r'C:\Users\atuta\Documents\Stock Price Predictions using Machine Learning\backend\api\new_titles.csv', 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(fields)
- 
-json_to_csv('test1', 'test2', 'test3')
+
+def delete_last_row():
+    """This function deletes last row from the cvs file."""
+    f = open(r'C:\Users\atuta\Documents\Stock Price Predictions using Machine Learning\backend\api\new_titles.csv', "r+", encoding='utf-8')
+    lines = f.readlines()
+    lines.pop()
+    f = open(r'C:\Users\atuta\Documents\Stock Price Predictions using Machine Learning\backend\api\new_titles.csv', "w+")
+    f.writelines(lines)
+
+
 
 def get_prediction():
     """Read the data"""
@@ -62,9 +77,9 @@ def get_prediction():
     countVector = CountVectorizer(ngram_range=(2,2))
     #ngram(2,2) means it will combine the 2 words together and assign the value
 
-    training_datasetDataset = countVector.fit_transform(headlines)
+    training_dataset = countVector.fit_transform(headlines)
 
-    """Preparing testing and training_dataseting"""
+    """Preparing testing and training_dataset"""
 
     testTransform =[]
     for row in range(0, len(test.index)):
@@ -82,3 +97,4 @@ def get_prediction():
     prediction = randomForestClassifier.predict(test_dataset)
 
     return prediction
+
