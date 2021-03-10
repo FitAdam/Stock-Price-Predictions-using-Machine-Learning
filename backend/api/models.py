@@ -47,9 +47,9 @@ class Post(models.Model):
 
 
 class NewsTitles(models.Model):
-    FIRST_TITLE = models.CharField(max_length=25)
-    SECOND_TITLE = models.CharField(max_length=25)
-    THIRD_TITLE = models.CharField(max_length=25)
+    FIRST_TITLE = models.CharField(max_length=200)
+    SECOND_TITLE = models.CharField(max_length=200)
+    THIRD_TITLE = models.CharField(max_length=200)
 
     def __str__(self):
         return '{}, {}'.format(self.FIRST_TITLE, self.SECOND_TITLE)
