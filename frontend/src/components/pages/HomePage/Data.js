@@ -8,8 +8,8 @@ export const homeObjOne = {
       'Use power of Machine Learning to predict the price fluctuation',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: 'images/svg-1.svg',
-    alt: 'Picture of Robot'
+    img: '',
+    alt: ''
   };
   
   export const homeObjTwo = {
@@ -21,8 +21,8 @@ export const homeObjOne = {
     description:
       "Make predictions based on the article's titles. ",
     imgStart: '',
-    img: 'images/svg-5.svg',
-    alt: 'Robot3'
+    img: '/images/robot2.svg',
+    alt: ''
   };
   
   export const homeObjThree = {
@@ -34,7 +34,7 @@ export const homeObjOne = {
     description:
       "Choose the 5 titles of articles and see what our services can deliver!",
     imgStart: 'start',
-    img: 'images/svg-7.svg',
-    alt: 'Robot'
+    img: 'images/robot2.svg',
+    alt: ''
   };
   
