@@ -1,14 +1,14 @@
 import React from 'react'
 
 
+
 class StockPred extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isGoing: true,
       firstTitle: '',
-      secondtTitle: '',
-      thirdtTitle: '',
+      secondTitle: '',
+      thirdTitle: '',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -17,7 +17,7 @@ class StockPred extends React.Component {
 
   handleInputChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.value;
     const name = target.name;
 
     this.setState({
@@ -33,15 +33,7 @@ class StockPred extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Is going:
-          <input
-            name="isGoing"
-            type="checkbox"
-            checked={this.state.isGoing}
-            onChange={this.handleInputChange} />
-        </label>
-        <br />
+
         <label>
           First Title:
           <input
