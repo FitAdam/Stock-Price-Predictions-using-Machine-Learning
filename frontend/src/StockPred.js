@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import './StockPred.css';
 
 class StockPred extends React.Component {
   constructor(props) {
@@ -9,7 +8,7 @@ class StockPred extends React.Component {
       firstTitle: '',
       secondTitle: '',
       thirdTitle: '',
-      prediction: '',
+      prediction: 'Here you will see your prediction...',
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -77,36 +76,40 @@ class StockPred extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+      <div className="display">
+        <form className="item" onSubmit={this.handleSubmit}>
 
           <label>
-            First Title:
-  <input
+            First Title: 
+  <input 
               name="firstTitle"
               type="text"
               value={this.state.firstTitle}
               onChange={this.handleInputChange} />
           </label>
           <label>
-            Second Title:
-  <input
+            Second Title: 
+  <input 
               name="secondTitle"
               type="text"
               value={this.state.secondTitle}
               onChange={this.handleInputChange} />
           </label>
           <label>
-            Third Title:
-  <input
+            Third Title: 
+  <input 
               name="thirdTitle"
               type="text"
               value={this.state.thirdTitle}
               onChange={this.handleInputChange} />
           </label>
-          <input type="submit" value="Submit" />
+          <input className="button" type="submit" value="Submit" />
         </form>
-        <h1>{this.state.prediction}</h1>
+        <div className="item">
+        <h1 className="title">{this.state.prediction}</h1>
+
+        </div>
+        
       </div>
 
 

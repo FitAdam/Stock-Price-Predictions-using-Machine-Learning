@@ -1,0 +1,28 @@
+
+  
+  .display {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 3em;
+    
+  }
+
+  .item {
+    padding: 1em;
+    list-style-type: none;
+    border-radius: 16px;
+    margin-bottom: 1em;
+    background: #fff;
+    box-shadow: 0px 2px 4px 2px #1f2848;
+  }
+
+
+  .title {
+    font-size: 100%;
+    color: #1f2848;
+  }
+
+  .box{
+    background: #1f2848;
+  }

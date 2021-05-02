@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import './articles.css';
 
 async function searchNews(q) {
   q = encodeURIComponent(q);
@@ -26,20 +25,20 @@ function Articles() {
   };
 
   return (
-    <div className="app">
+    <div className="display">
       <form onSubmit={search}>
         <input
           autoFocus
           value={query}
           onChange={e => setQuery(e.target.value)}
         />
-        <button><Button variant="primary">Search</Button></button>
+        <button>Go!</button>
       </form>
 
       {!list
         ? null
         : list.length === 0
-          ? <p><i>No results</i></p>
+          ? <p><i>Sorry, we couldn't find any results..</i></p>
           : <ul>
             {list.map((item, i) => (
               <Item key={i} item={item} />
@@ -67,10 +66,6 @@ function Item({ item }) {
         <a href={item.url}>{item.name}</a>
       </h2>
 
-      <p className="description">
-        {item.description}
-      </p>
-
       <div className="meta">
         <span>{formatDate(item.datePublished)}</span>
 
@@ -88,6 +83,13 @@ function Item({ item }) {
           <span>{separateWords(item.category)}</span>
         }
       </div>
+
+     
+      <p className="description">
+        {item.description}
+      </p>
+
+     
     </li>
   );
 }

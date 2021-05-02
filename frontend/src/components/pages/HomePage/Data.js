@@ -32,7 +32,7 @@ export const homeObjOne = {
     topLine: 'EASY TO USE',
     headline: 'Efficient predictions based on real market trends',
     description:
-      "Choose the 5 titles of articles and see what our services can deliver!",
+      "Choose the 3 titles of articles and see what our service can deliver!",
     imgStart: 'start',
     img: 'images/robot2.svg',
     alt: ''
