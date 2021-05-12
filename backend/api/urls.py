@@ -9,6 +9,5 @@ urlpatterns = [
     path('post-list/<int:pk>/', DetailPost),
     path('news-titles', views.news_titles),
 
-   
 ]
 

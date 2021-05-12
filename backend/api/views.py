@@ -33,7 +33,7 @@ class NewsTitlesView(viewsets.ModelViewSet):
 @api_view(['GET', 'POST'])
 def news_titles(request, format=None):
     """
-    List all code snippets, or create a new snippet.
+    Returns new machine learning sentiment prediciton.
     """
     if request.method == 'GET':
         queryset = NewsTitles.objects.all()

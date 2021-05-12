@@ -96,7 +96,7 @@ def get_prediction():
     """Predict"""
     prediction = randomForestClassifier.predict(test_dataset)
 
-    print(prediction)
+   
 
     return prediction
 

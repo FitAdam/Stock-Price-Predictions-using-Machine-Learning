@@ -10,7 +10,7 @@ const About = () => (
     <p>Stock Price Predictions using Machine Learning.</p>
     <p>Artificial Intelligence And Robotics
     Undergraduate Thesis Project</p>
-    <p>Copyright © 2020 Adam Gniado- Tutakiewicz</p>
+    <p>Copyright © 2021 Adam Gniado- Tutakiewicz</p>
   </div>
 
   <p className='item'>Risk Disclosure: Trading in financial instruments, stocks, derivatives and other negotiable securities involves high risks, including the risk of losing some, or all, of your investment amount, and may not be suitable for all investors. Prices are extremely volatile and may be affected by external factors such as financial, regulatory or political events.
