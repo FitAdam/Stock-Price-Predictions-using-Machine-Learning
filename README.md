@@ -1,35 +1,51 @@
-# Stock-Price-Predictions-using-Machine-Learning
+﻿# Stock-Price-Predictions-using-Machine-Learning
+## Artificial Intelligence as a Service - <b><i>StockBot</i></b>
 
+### What is a StockBot?
+StockBot is a web application build from several micro-services that delivers a sentiment machine learning prediction over the web- application. 
 
-## Set up
+### Installation
+Make sure that your development environment meet the following requirements: 
+You need to have installed: 
 
-## Backend
-`Price Predictions using Machine Learning> cd .\backend\`            
-`pipenv shell`
-`python manage.py runserver`
+* Python v3.9.*
+* Node.js v14.16.*
+* npm v7.12.*
+* webpack@4.44.2
 
-## Frontend 
-`Stock Price Predictions using Machine Learning\frontend> cd .\frontend\`
-`npm start`
+Make sure that PORT 3000 and PORT 8000 are free to use. 
 
+### How to run the app in the development mode?
 
-Runs the app in the development mode.\
+Make sure that you're in the right directory when executing the comments. 
+
+#### Run Machine Learning API
+1. `Price Predictions using Machine Learning> cd .\backend\` Changes directory to backend folder           
+2. `pipenv shell`Starts the python virtual environment
+3. `python manage.py runserver` Starts API's development server
+4. Leave it running and open new terminal to start front-end interface.
+
+#### Run Front-end Interface 
+1. `Stock Price Predictions using Machine Learning> cd .\frontend\` 
+2. `npm install` - Installs all needed dependencies
+3. `npm start`- Starts the react.js development server
+
+## To see the web application working:
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### How to you see it?
 
-### `npm test`
+1. After successful set up go to the stock prediction page.
+2. Input the titles that you want to check against the model.
+3. Press the submit button to see the prediction.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Acknowledgments
 
-### `npm run build`
+I would like to acknowledge my supervisor Dr Renxi Qiu and Dr Vitaly Schetinin for great learning experience and giving me a confidence to tackle ambitious projects. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Troubleshooting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The API runs at  at http://127.0.0.1:8000/. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
