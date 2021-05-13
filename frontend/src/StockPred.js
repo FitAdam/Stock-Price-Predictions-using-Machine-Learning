@@ -49,7 +49,7 @@ class StockPred extends React.Component {
         this.setState({ prediction: data })
       })
       .catch(error => {
-        this.setState({ errorMessage: error.toString() });
+        this.setState({ prediction: error.toString() });
         console.error('There was an error!', error);
       });
     event.preventDefault();
@@ -58,6 +58,7 @@ class StockPred extends React.Component {
   render() {
     return (
       <div className="display">
+      <h1 className="title">Please insert 3 headlines of the articles to obtain the sentiment analysis.</h1>
         <form className="item" onSubmit={this.handleSubmit}>
 
           <label>
@@ -86,6 +87,7 @@ class StockPred extends React.Component {
           </label>
           <input className="button" type="submit" value="Submit" />
         </form>
+        
         <div className="item">
         {(() => {
         if (this.state.prediction == 1) {

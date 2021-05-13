@@ -1,9 +1,9 @@
-.home__hero-section {
+.home_core-section {
     color: #fff;
     padding: 160px 0;
   }
   
-  .home__hero-row {
+  .home_core-row {
     align-items: center;
   }
   
@@ -25,7 +25,7 @@
     flex-basis: 50%;
   }
   
-  .home__hero-text-wrapper {
+  .home_core-text-wrapper {
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
@@ -57,18 +57,18 @@
     background-color: #1f2848;
   }
   
-  .home__hero-subtitle {
+  .home_core-subtitle {
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
   }
   
-  .home__hero-img-wrapper {
+  .home_core-img-wrapper {
     max-width: 555px;
   }
   
-  .home__hero-img {
+  .home_core-img {
     max-width: 95%;
     margin-top: 0;
     margin-right: 0;
@@ -91,7 +91,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    .home__hero-text-wrapper {
+    .home_core-text-wrapper {
       padding-bottom: 65px;
     }
   

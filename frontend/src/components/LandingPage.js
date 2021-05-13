@@ -15,18 +15,18 @@ function LandingPage({
   return (
     <>
       <div
-        className={lightBg ? 'home__hero-section' : 'home__hero-section darkBg'}
+        className={lightBg ? 'home_core-section' : 'home_core-section darkBg'}
       >
         <div className='container'>
           <div
-            className='row home__hero-row'
+            className='row home_core-row'
             style={{
               display: 'flex',
               flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
             }}
           >
             <div className='col'>
-              <div className='home__hero-text-wrapper'>
+              <div className='home_core-text-wrapper'>
                 <div className='top-line'>{topLine}</div>
                 <h1 className={lightText ? 'heading' : 'heading dark'}>
                   {headline}
@@ -34,8 +34,8 @@ function LandingPage({
                 <p
                   className={
                     lightTextDesc
-                      ? 'home__hero-subtitle'
-                      : 'home__hero-subtitle dark'
+                      ? 'home_core-subtitle'
+                      : 'home_core-subtitle dark'
                   }
                 >
                   {description}
@@ -44,8 +44,8 @@ function LandingPage({
               </div>
             </div>
             <div className='col'>
-              <div className='home__hero-img-wrapper'>
-                <img src={img} alt={alt} className='home__hero-img' />
+              <div className='home_core-img-wrapper'>
+                <img src={img} alt={alt} className='home_core-img' />
               </div>
             </div>
           </div>
