@@ -17,10 +17,11 @@ Make sure that PORT 3000 and PORT 8000 are free to use.
 
 ### How to run the app in the development mode?
 
-Make sure that you're in the right directory when executing the comments. 
+Make sure that you're in the right directory when executing the commands. 
 
 #### Run Machine Learning API
-1. `Price Predictions using Machine Learning> cd .\backend\` Changes directory to backend folder           
+1. `Price Predictions using Machine Learning> cd .\backend\` Changes directory to backed folder   
+2. `pipenv install` - install dependencies. 
 2. `pipenv shell`Starts the python virtual environment
 3. `python manage.py runserver` Starts API's development server
 4. Leave it running and open new terminal to start front-end interface.
@@ -46,6 +47,8 @@ I would like to acknowledge my supervisor Dr Renxi Qiu and Dr Vitaly Schetinin f
 
 #### Troubleshooting
 
-The API runs at  at http://127.0.0.1:8000/. 
+*The API runs at  at http://127.0.0.1:8000/. 
+
+The issues with webpack can be solved by updating the webpack globally at node_modules.
 
 
