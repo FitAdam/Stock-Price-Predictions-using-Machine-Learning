@@ -1,8 +1,13 @@
 ﻿# Stock-Price-Predictions-using-Machine-Learning
 ## Artificial Intelligence as a Service - <b><i>StockBot</i></b>
 
+![](pictures/Picture4.png)
+
 ### What is a StockBot?
 StockBot is a web application build from several micro-services that delivers a sentiment machine learning prediction over the web- application. 
+
+![](pictures/Picture1.png)
+![](pictures/Picture2.png)
 
 ### Installation
 Make sure that your development environment meet the following requirements: 
@@ -14,6 +19,7 @@ You need to have installed:
 * webpack@4.44.2
 
 Make sure that PORT 3000 and PORT 8000 are free to use. 
+![](pictures/Picture3.png)
 
 ### How to run the app in the development mode?
 
@@ -44,6 +50,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Acknowledgments
 
 I would like to acknowledge my supervisor Dr Renxi Qiu and Dr Vitaly Schetinin for great learning experience and giving me a confidence to tackle ambitious projects. 
+
+
 
 #### Troubleshooting
 
