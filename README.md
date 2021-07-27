@@ -1,5 +1,6 @@
 ﻿# Stock-Price-Predictions-using-Machine-Learning
 ## Artificial Intelligence as a Service - <b><i>StockBot</i></b>
+![](pictures/smartmockups_koeo48q7.jpg)
 
 ![](pictures/Picture4.png)
 
